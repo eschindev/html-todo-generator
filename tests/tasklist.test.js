@@ -20,7 +20,7 @@ describe('TaskList', () => {
     describe('TaskList.render()', () => {
         it('should return a string of HTML when the render method is called', () => {
             const tl = new TaskList();
-            const expectedOutput = `<ul class="tasks">${tl.innerHTML}</ul>`;
+            const expectedOutput = `<ul class="tasks">${tl.renderInnerHTML()}</ul>`;
 
             const renderOutput = tl.render();
             
